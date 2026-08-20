@@ -1,10 +1,12 @@
-import React, { useRef } from 'react'
+"use client";
+
+import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
 
 const Navbar = () => {
-
+    const [isScroll, setIsScroll] = useState(false)
     const sideMenuRef = useRef();
 
     const openMenu = () => {
@@ -14,20 +16,29 @@ const Navbar = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)'
     }
 
-
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (scrollY > 50) {
+                setIsScroll(true)
+            } else {
+                setIsScroll(false)
+            }
+        })
+    }, [isScroll])
 
     return (
         <>
-            <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-85%]'>
-                <Image src={assets.header_bg_color} alt='' className='w-full' />
+            <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-75%]'>
+                <Image src={assets.header_bg_color} alt='' className='w-full' loading='eager' />
             </div>
-            <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
+
+            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <Link href='#top'>
-                    <Image src={assets.logo} alt='logo' className='w-28 cursor-pointer mr-14' />
-                    {/* <span  class="text-4xl font-bold text-gray-900 dark:text-white tracking-tight">Azan<span _ngcontent-ng-c3970792529="" class="text-[#c026d3]">.</span></span> */}
+                    {/* <Image src={assets.logo} alt='logo' className='w-28 cursor-pointer mr-14' /> */}
+                    <span className="text-4xl text-gray-900 dark:text-white tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
                 </Link>
 
-                <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
+                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "shadow-sm bg-white/50" } `}>
 
                     <li className='font-Ovo'>
                         <Link href="#top">Home</Link>
@@ -42,7 +53,7 @@ const Navbar = () => {
                         <Link href="#word">My Work</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#contact">Contact</Link>
+                        <Link href="#contact">Contact me</Link>
                     </li>
                 </ul>
 
@@ -51,7 +62,7 @@ const Navbar = () => {
                         <Image src={assets.moon_icon} alt='' className='w-6' />
                     </button>
 
-                    <Link href="#contactme" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo'>WhatsApp <Image src={assets.arrow_icon} alt='arrow pic' className="w-3" />
+                    <Link href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2 border border-gray-500 rounded-full ml-4 font-Ovo'>WhatsApp <Image src={assets.arrow_icon} alt='arrow pic' className="w-3" />
                     </Link>
 
                     <button className='block md:hidden ml-3' onClick={openMenu}>
@@ -68,7 +79,7 @@ const Navbar = () => {
                     </div>
 
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#top">Home</Link> 
+                        <Link href="#top">Home</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
                         <Link href="#about">About me</Link>

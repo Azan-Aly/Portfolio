@@ -1,13 +1,15 @@
-"use client"
-
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Header from "./components/Header";
+import TechStack from "./components/TechStack";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Header />
+      <About />
+      <TechStack />
     </>
   );
 }
