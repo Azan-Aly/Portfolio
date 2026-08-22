@@ -164,6 +164,10 @@ export const infoList = [
 
 export const toolsData = [
     {
+        title: 'NPM',
+        image: assets.npm
+    },
+    {
         title: "VS Code",
         image: assets.vscode,
     },
@@ -180,7 +184,7 @@ export const toolsData = [
         image: assets.postman,
     },
     {
-        title: "GitHub Copilot",
+        title: "Co-Pilot",
         image: assets.githubCopilot,
     },
     {

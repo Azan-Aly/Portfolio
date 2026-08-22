@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets, toolsData, techstackData, } from '@/assets/assets'
+import { toolsData, techstackData, } from '@/assets/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -35,7 +35,7 @@ const TechStack = () => {
                         <li key={index} tabIndex={0} aria-label={tool.title} className='group w-24 sm:w-32 aspect-square cursor-pointer outline-none hover:-translate-y-2 focus:-translate-y-2 duration-500'>
                             <div className='relative h-full w-full transform-3d transition-transform duration-700 group-hover:transform-[rotateY(180deg)] group-focus:transform-[rotateY(180deg)]'>
                                 <div className='absolute inset-0 flex items-center justify-center backface-hidden'>
-                                    <Image src={tool.image} alt='{tool.title}' className='w-16 sm:w-24' />
+                                    <Image src={tool.image} alt='{tool.title}' className='w-16 sm:w-32' />
                                 </div>
                                 <div className='absolute inset-0 flex items-center justify-center px-2 text-center text-lg font-semibold text-gray-700 backface-hidden transform-[rotateY(180deg)]'>
                                     {tool.title}
