@@ -1,4 +1,3 @@
-import user_image from './user-image.png';
 import hero_pic from './hero-pic.jpg'
 import hero from './hero.png'
 import main_pic from './main.png'
@@ -11,17 +10,12 @@ import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -41,9 +35,58 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import html from "./html.png";
+import css from "./css.png";
+import javascript from "./javascript.png";
+import tailwind from "./tailwind.png";
+import bootstrap from "./bootstrap.png";
+import jquery from "./jquery.png";
+import react from "./react.png";
+import nodejs from "./nodejs.png";
+import mongodb from "./mongodb.png";
+import typescript from "./typescript.png";
+import reactnative from "./reactnative.png";
+import nextjs from "./nextjs.png";
+import expressjs from "./expressjs.png";
+import mysql from "./mysql.png"
+import npm from "./npm.png";
+import git from "./git.png";
+import github from "./github.png";
+import vscode from "./vscode.png";
+import postman from "./postman.png";
+import githubCopilot from "./github-copilot.png";
+import cursor from "./cursor.png";
+import antigravity from "./antigravity.png"
+import chatgpt from "./chatgpt.png";
+import gemini from "./gemini.png";
+import claude from "./claude.png";
 
 export const assets = {
-    user_image,
+    html,
+    css,
+    javascript,
+    typescript,
+    tailwind,
+    bootstrap,
+    jquery,
+    react,
+    nodejs,
+    expressjs,
+    mongodb,
+    mysql,
+    nextjs,
+    reactnative,
+    npm,
+    git,
+    github,
+    vscode,
+    postman,
+    githubCopilot,
+    cursor,
+    antigravity,
+    chatgpt,
+    gemini,
+    claude,
     hero_pic,
     hero,
     center_pic,
@@ -56,17 +99,12 @@ export const assets = {
     edu_icon_dark,
     project_icon,
     project_icon_dark,
-    vscode,
     firebase,
     figma,
-    git,
-    mongodb,
     right_arrow_white,
-    logo,
     logo_dark,
     mail_icon,
     mail_icon_dark,
-    profile_img,
     download_icon,
     hand_icon,
     header_bg_color,
@@ -125,12 +163,104 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.git, assets.figma
+    {
+        title: "VS Code",
+        image: assets.vscode,
+    },
+    {
+        title: "Git",
+        image: assets.git,
+    },
+    {
+        title: "GitHub",
+        image: assets.github,
+    },
+    {
+        title: "Postman",
+        image: assets.postman,
+    },
+    {
+        title: "GitHub Copilot",
+        image: assets.githubCopilot,
+    },
+    {
+        title: "Cursor",
+        image: assets.cursor,
+    },
+    {
+        title: "Antigravity",
+        image: assets.antigravity,
+    },
+    {
+        title: "Chat GPT",
+        image: assets.chatgpt,
+    },
+    {
+        title: "Gemini",
+        image: assets.gemini,
+    },
+    {
+        title: "Claude",
+        image: assets.claude,
+    },
+    
 ];
 
 export const techstackData = [
     {
-        title: "mongodb",
+        title: "HTML",
+        image: assets.html
+    },
+    {
+        title: "CSS",
+        image: assets.css
+    },
+    {
+        title: "JavaScript",
+        image: assets.javascript
+    },
+    {
+        title: "TypeScript",
+        image: assets.typescript
+    },
+    {
+        title: "Tailwind CSS",
+        image: assets.tailwind
+    },
+    {
+        title: "BootStrap",
+        image: assets.bootstrap
+    },
+    {
+        title: "Jquery",
+        image: assets.jquery
+    },
+    {
+        title: "React",
+        image: assets.react
+    },
+    {
+        title: "Node.js",
+        image: assets.nodejs
+    },
+    {
+        title: "Express.js",
+        image: assets.expressjs
+    },
+    {
+        title: "MongoDB",
         image: assets.mongodb
+    },
+    {
+        title: "My SQL",
+        image: assets.mysql
+    },
+    {
+        title: "Next.js",
+        image: assets.nextjs
+    },
+    {
+        title: "React Native",
+        image: assets.reactnative
     },
 ];
