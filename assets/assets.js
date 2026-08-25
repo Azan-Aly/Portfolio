@@ -6,6 +6,7 @@ import newpic from './new.png'
 import first from './first.png'
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
+import circular_Text from './circular-text.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
@@ -31,6 +32,10 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
+import web from './web.jpg';
+import app from './app.jpg';
+import backend from './backend.jpg';
+import frontend from './frontend.jpg';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -93,6 +98,11 @@ export const assets = {
     main_pic,
     newpic,
     first,
+    circular_Text,
+    web,
+    app,
+    backend,
+    frontend,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -149,12 +159,37 @@ export const workData = [
     },
 ]
 
+// export const servicesData = [
+//     { icon: assets.web_icon, title: 'Web Development', description: 'Web development is the process of building, programming...', link: '' },
+//     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+//     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+// ]
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+        icon: assets.web,
+        title: 'Full Stack Web Development',
+        description: 'End-to-end web applications built with modern architectures using React, Node.js, and clean code principles.',
+        link: ''
+    },
+    { 
+        icon: assets.app, 
+        title: 'Cross-Platform Mobile Apps', 
+        description: 'Developing smooth, native-like iOS and Android mobile applications using React Native.', 
+        link: '' 
+    },
+    {
+        icon: assets.backend,
+        title: 'API & Backend Engineering',
+        description: 'Designing scalable RESTful & GraphQL APIs with Express.js, Node.js, secure authentication, and microservices.',
+        link: ''
+    },
+    {
+        icon: assets.frontend,
+        title: 'Frontend & UI Engineering',
+        description: 'Building responsive, high-performance, and accessible user interfaces with React, Next.js, and ......',
+        link: ''
+    },
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'React Js, Node Js, Express Js, Mongodb, Next Js' },
@@ -207,7 +242,7 @@ export const toolsData = [
         title: "Claude",
         image: assets.claude,
     },
-    
+
 ];
 
 export const techstackData = [

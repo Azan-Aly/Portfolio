@@ -34,7 +34,6 @@ const Navbar = () => {
 
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <Link href='#top'>
-                    {/* <Image src={assets.logo} alt='logo' className='w-28 cursor-pointer mr-14' /> */}
                     <span className="text-4xl text-gray-900 dark:text-white tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
                 </Link>
 
@@ -50,7 +49,7 @@ const Navbar = () => {
                         <Link href="#services">Services</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#word">My Work</Link>
+                        <Link href="#work">My Work</Link>
                     </li>
                     <li className='font-Ovo'>
                         <Link href="#contact">Contact me</Link>
@@ -94,7 +93,7 @@ const Navbar = () => {
                         <Link href="#services">Services</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#word">My Work</Link>
+                        <Link href="#work">My Work</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
                         <Link href="#contact">Contact</Link>

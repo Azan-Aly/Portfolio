@@ -3,6 +3,15 @@
 *{
   font-family: Outfit; 
 }
+
+@layer utilities {
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    justify-content: center;
+
+  }
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
