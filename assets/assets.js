@@ -31,6 +31,11 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
+import web from './web.png';
+import app from './app.png';
+import backend from './backend.png';
+import frontend from './frontend.png';
+import circularText from "./circular-text.png";
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -60,6 +65,10 @@ import antigravity from "./antigravity.png"
 import chatgpt from "./chatgpt.png";
 import gemini from "./gemini.png";
 import claude from "./claude.png";
+import work1 from "./public/work-1.png";
+import work2 from "./public/work-2.png";
+import work3 from "./public/work-3.png";
+import work4 from "./public/work-4.png";
 
 export const assets = {
     html,
@@ -120,6 +129,11 @@ export const assets = {
     mobile_icon,
     ui_icon,
     graphics_icon,
+    web,
+    app,
+    backend,
+    frontend,
+    circularText,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -130,30 +144,30 @@ export const workData = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: work1,
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: work2,
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: work3,
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: work4,
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web, title: 'Full Stack Web Development', description: 'End-to-end web applications built with modern architectures using React, Node.js, Next.js, and clean code principles.', link: '' },
+    { icon: assets.app, title: 'Cross-Platform Mobile Apps', description: 'Developing smooth, high quality native-like iOS and Android mobile applications using React Native.', link: '' },
+    { icon: assets.backend, title: 'API & Backend Engineering', description: 'Designing scalable RESTful & GraphQL APIs with Express.js, Node.js, secure Authentication, and microservices.', link: '' },
+    { icon: assets.frontend, title: 'Frontend and UI/UX Engineering', description: 'Building responsive, high-performance, and accessible user interfaces with React, Next.js and smooth user interface and experience.', link: '' },
 ]
 
 export const infoList = [

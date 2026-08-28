@@ -8,8 +8,8 @@ const Header = () => {
       <div className='justify-center items-center flex'>
         <Image src={assets.hero_pic} alt='' className='rounded-full w-36 h-36 object-cover' />
       </div>
-      <h2 className='flex items-end justify-center gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-        Hi! I'm Muhammad Azan Ali
+      <h2 className='flex items-center justify-center gap-2 text-xl md:text-2xl mb-1.5 font-Ovo'>
+        Hi! I&apos;m Muhammad Azan Ali
         <Image src={assets.hand_icon} alt='' className='w-6 ' />
       </h2>
 
