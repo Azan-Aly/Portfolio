@@ -32,8 +32,8 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
-import web from './web.png';
-import app from './app.png';
+import web from './web.jpg';
+import app from './app.jpg';
 import backend from './backend.png';
 import frontend from './frontend.png';
 import circularText from "./circular-text.png";
@@ -70,6 +70,19 @@ import work1 from "./public/work-1.png";
 import work2 from "./public/work-2.png";
 import work3 from "./public/work-3.png";
 import work4 from "./public/work-4.png";
+import nodejsCertificate from './nodejs-udemy-certificate-azan.jpg';
+import agenticAiCertificate from './udemy-agenticai-certificate-azan.jpg';
+import dockerCertificate from './udemy-docker-certificate-azan.jpg';
+import dsaCertificate from './udemy-dsa-certificate-azan.jpg';
+import sqlCertificate from './udemy-sql-certificate-azan.jpg';
+import fullstackCertificate from './udemy-web-angela-certificate-azan.jpg';
+import webCertificate from './udemy-web-certificate-azan.jpg';
+import googleAiEssentialsCertificate from './google_coursera.png';
+import introductionToAiCertificate from './intro_to_ai.png';
+import maximizeProductivityCertificate from './max_productivity.png';
+import discoverArtOfPromptingCertificate from './art_of_prompting.png';
+import useAiResponsiblyCertificate from './use_ai_responsibly.png';
+import stayAheadOfAiCertificate from './stay_ahead_of_ai.png';
 
 export const assets = {
     html,
@@ -163,6 +176,87 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: work4,
     },
+]
+
+export const certificateData = [
+    {
+        title: 'Google AI Essentials',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: googleAiEssentialsCertificate,
+    },
+    {
+        title: 'Introduction to AI',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: introductionToAiCertificate,
+    },
+    {
+        title: 'Maximize Productivity With AI Tools',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: maximizeProductivityCertificate,
+    },
+    {
+        title: 'Discover the Art of Prompting',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: discoverArtOfPromptingCertificate,
+    },
+    {
+        title: 'Use AI Responsibly',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: useAiResponsiblyCertificate,
+    },
+    {
+        title: 'Stay Ahead of the AI Curve',
+        issuer: 'Google via Coursera',
+        date: 'August 19, 2026',
+        image: stayAheadOfAiCertificate,
+    },
+    {
+        title: 'Ultimate Web Development Course 2026 - Build Modern Websites',
+        issuer: 'Udemy',
+        date: 'June 11, 2026',
+        image: webCertificate,
+    },
+    {
+        title: 'The Complete Full-Stack Web Development Bootcamp',
+        issuer: 'Udemy',
+        date: 'June 14, 2026',
+        image: fullstackCertificate,
+    },
+    {
+        title: 'Node.js - Beginner to Advanced course with projects',
+        issuer: 'Udemy',
+        date: 'June 10, 2026',
+        image: nodejsCertificate,
+    },
+    {
+        title: '10 Day MySQL Bootcamp | MySQL Database Design for Beginners',
+        issuer: 'Udemy',
+        date: 'June 14, 2026',
+        image: sqlCertificate,
+    },
+    {
+        title: 'Docker and Kubernetes for beginners | DevOps journey',
+        issuer: 'Udemy',
+        date: 'June 11, 2026',
+        image: dockerCertificate,
+    },
+    {
+        title: 'Data Structures and Algorithms with Java',
+        issuer: 'Udemy',
+        date: 'June 11, 2026',
+        image: dsaCertificate,
+    },
+    // {
+    //     title: 'Full stack generative and Agentic AI with Python',
+    //     issuer: 'Udemy',
+    //     date: 'June 11, 2026',
+    //     image: agenticAiCertificate,
+    // },
 ]
 
 // export const servicesData = [

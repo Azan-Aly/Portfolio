@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { certificateData } from '@/assets/assets'
 import verifyBadge from '@/assets/verifybadge.png'
 
 export const metadata = {
   title: 'Certifications',
-  description: 'Certifications for Muhammad Azan Ali.',
-  robots: { index: false, follow: true },
+  description: 'View Muhammad Azan Ali\'s verified Udemy certificates in full-stack web development, Node.js, AI, Docker, SQL, and algorithms.',
+  robots: { index: true, follow: true },
 }
 
 export default function CertificationsPage() {
@@ -22,25 +23,25 @@ export default function CertificationsPage() {
         </header>
 
         <section className='mx-auto max-w-3xl py-24 text-center'>
+          <h1 className='mb-4 font-Ovo text-4xl font-semibold sm:text-6xl'>Certifications</h1>
           <div className='mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-fuchsia-100'>
             <Image src={verifyBadge} alt='' className='h-12 w-12 object-contain' />
           </div>
           <p className='mt-8 font-Ovo text-lg text-fuchsia-700'>Credentials and learning</p>
-          <h1 className='mt-3 font-Ovo text-4xl font-semibold sm:text-6xl'>Certifications</h1>
           <p className='mt-6 text-lg leading-8 text-gray-600'>
-            This page is being prepared with verified certificates and professional credentials. New achievements will be added here as they are completed and documented.
+            A record of completed courses and continued professional development across full-stack web development, backend engineering, AI, DevOps, databases, and algorithms.
           </p>
         </section>
 
-        <section className='grid gap-5 pb-16 sm:grid-cols-3' aria-label='Certification focus areas'>
-          {[
-            ['Frontend engineering', 'React, Next.js, JavaScript, and accessible user interfaces.'],
-            ['Backend engineering', 'Node.js, Express.js, APIs, authentication, and databases.'],
-            ['Continuous learning', 'Current study across full-stack development and AI-assisted workflows.'],
-          ].map(([title, description]) => (
-            <article key={title} className='rounded-2xl border border-gray-200 bg-white/80 p-6 shadow-sm'>
-              <h2 className='font-Ovo text-xl'>{title}</h2>
-              <p className='mt-3 text-sm leading-6 text-gray-600'>{description}</p>
+        <section className='grid gap-6 pb-16 md:grid-cols-2' aria-label='Certificates'>
+          {certificateData.map(({ title, issuer, date, image }) => (
+            <article key={title} className='overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg'>
+              <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top' />
+              <div className='p-6'>
+                <p className='text-sm font-semibold uppercase tracking-wide text-fuchsia-700'>{issuer}</p>
+                <h2 className='mt-2 font-Ovo text-xl leading-7'>{title}</h2>
+                <p className='mt-3 text-sm text-gray-600'>Completed {date}</p>
+              </div>
             </article>
           ))}
         </section>
