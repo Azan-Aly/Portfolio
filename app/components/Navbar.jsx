@@ -34,11 +34,7 @@ const Navbar = () => {
 
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <Link href='#top'>
-<<<<<<< HEAD
                     <span className="text-4xl text-gray-900 tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
-=======
-                    <span className="text-4xl text-gray-900 dark:text-white tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
->>>>>>> f55d68a80a1c84120c7554afb2ba9de194f49b30
                 </Link>
 
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "shadow-sm bg-white/50"} `}>

@@ -32,18 +32,11 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
-<<<<<<< HEAD
 import web from './web.png';
 import app from './app.png';
 import backend from './backend.png';
 import frontend from './frontend.png';
 import circularText from "./circular-text.png";
-=======
-import web from './web.jpg';
-import app from './app.jpg';
-import backend from './backend.jpg';
-import frontend from './frontend.jpg';
->>>>>>> f55d68a80a1c84120c7554afb2ba9de194f49b30
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -111,10 +104,6 @@ export const assets = {
     newpic,
     first,
     circular_Text,
-    web,
-    app,
-    backend,
-    frontend,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -182,13 +171,6 @@ export const workData = [
 //     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 // ]
 export const serviceData = [
-<<<<<<< HEAD
-    { icon: assets.web, title: 'Full Stack Web Development', description: 'End-to-end web applications built with modern architectures using React, Node.js, Next.js, and clean code principles.', link: '' },
-    { icon: assets.app, title: 'Cross-Platform Mobile Apps', description: 'Developing smooth, high quality native-like iOS and Android mobile applications using React Native.', link: '' },
-    { icon: assets.backend, title: 'API & Backend Engineering', description: 'Designing scalable RESTful & GraphQL APIs with Express.js, Node.js, secure Authentication, and microservices.', link: '' },
-    { icon: assets.frontend, title: 'Frontend and UI/UX Engineering', description: 'Building responsive, high-performance, and accessible user interfaces with React, Next.js and smooth user interface and experience.', link: '' },
-]
-=======
     {
         icon: assets.web,
         title: 'Full Stack Web Development',
@@ -214,7 +196,6 @@ export const serviceData = [
         link: ''
     },
 ];
->>>>>>> f55d68a80a1c84120c7554afb2ba9de194f49b30
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'React Js, Node Js, Express Js, Mongodb, Next Js' },
