@@ -32,6 +32,7 @@ export default function Home() {
       "Node.js",
       "Express.js",
       "MongoDB",
+      "PostgreSQL",
       "React Native",
       "REST APIs",
       "GraphQL",

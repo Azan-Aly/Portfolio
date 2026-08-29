@@ -9,10 +9,10 @@ const ovo = Ovo({
   subsets: ["latin"], weight: ["400"]
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata = {
-  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Muhammad Azan Ali | Full-Stack Developer",
     template: "%s | Muhammad Azan Ali",
@@ -23,6 +23,8 @@ export const metadata = {
   keywords: [
     "Muhammad Azan Ali",
     "Azan Ali",
+    "Azandotdevpages",
+    "azan pages dev",
     "software engineer Pakistan",
     "software developer Pakistan",
     "full-stack developer Pakistan",

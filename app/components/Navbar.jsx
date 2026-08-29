@@ -8,6 +8,7 @@ import { assets } from '@/assets/assets'
 const Navbar = () => {
     const [isScroll, setIsScroll] = useState(false)
     const sideMenuRef = useRef();
+    const navLinkClass = 'relative inline-flex items-center py-1 text-slate-700 transition-colors duration-300 hover:text-fuchsia-700 after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-fuchsia-400/80 after:via-white after:to-cyan-300/80 after:opacity-0 after:shadow-[0_0_8px_rgba(217,70,239,0.45),0_0_14px_rgba(103,232,249,0.3)] after:backdrop-blur-sm after:transition-all after:duration-300 hover:after:w-full hover:after:opacity-100'
 
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)'
@@ -32,7 +33,7 @@ const Navbar = () => {
                 <Image src={assets.header_bg_color} alt='' className='w-full' loading='eager' />
             </div>
 
-            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
+            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[4%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <Link href='#top'>
                     <span className="text-4xl text-gray-900 tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
                 </Link>
@@ -40,19 +41,22 @@ const Navbar = () => {
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "shadow-sm bg-white/50"} `}>
 
                     <li className='font-Ovo'>
-                        <Link href="#top">Home</Link>
+                        <Link className={navLinkClass} href="#top">Home</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#about">About me</Link>
+                        <Link className={navLinkClass} href="#about">About me</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#services">Services</Link>
+                        <Link className={navLinkClass} href="#services">Services</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#work">My Work</Link>
+                        <Link className={navLinkClass} href="#work">My Work</Link>
                     </li>
                     <li className='font-Ovo'>
-                        <Link href="#contact">Contact me</Link>
+                        <Link className={navLinkClass} href="#contact">Contact me</Link>
+                    </li>
+                    <li className={`font-Ovo ${isScroll ? "" : "hidden"} `}>
+                        <Link className={navLinkClass} href="/certifications">My Certificates</Link>
                     </li>
                 </ul>
 
@@ -84,19 +88,22 @@ const Navbar = () => {
                     </div>
 
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#top">Home</Link>
+                        <Link className={navLinkClass} href="#top">Home</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#about">About me</Link>
+                        <Link className={navLinkClass} href="#about">About me</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#services">Services</Link>
+                        <Link className={navLinkClass} href="#services">Services</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#work">My Work</Link>
+                        <Link className={navLinkClass} href="#work">My Work</Link>
                     </li>
                     <li className='font-Ovo' onClick={closeMenu}>
-                        <Link href="#contact">Contact</Link>
+                        <Link className={navLinkClass} href="#contact">Contact me</Link>
+                    </li>
+                    <li className='font-Ovo' onClick={closeMenu}>
+                        <Link className={navLinkClass} href="/certifications">My Certifications</Link>
                     </li>
                 </ul>
 

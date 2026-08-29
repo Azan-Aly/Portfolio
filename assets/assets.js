@@ -157,24 +157,48 @@ export const assets = {
 
 export const workData = [
     {
+        slug: 'frontend-project',
         title: 'Frontend project',
         description: 'Web Design',
+        longDescription: 'A polished frontend experience focused on clear information architecture, responsive layouts, and thoughtful interaction details across every screen size.',
+        techStack: ['React', 'Next.js', 'Tailwind CSS'],
+        features: ['Responsive interface', 'Reusable component system', 'Accessible interaction patterns'],
+        projectUrl: 'https://github.com/Azan-Aly',
         bgImage: work1,
+        screenshots: [work1],
     },
     {
+        slug: 'geo-based-app',
         title: 'Geo based app',
         description: 'Mobile App',
+        longDescription: 'A location-aware mobile experience that turns geographic data into a simple, useful workflow for people on the move.',
+        techStack: ['React Native', 'Node.js', 'MongoDB'],
+        features: ['Location-aware flows', 'Mobile-first UI', 'Fast data retrieval'],
+        projectUrl: 'https://github.com/Azan-Aly',
         bgImage: work2,
+        screenshots: [work2],
     },
     {
+        slug: 'photography-site',
         title: 'Photography site',
         description: 'Web Design',
+        longDescription: 'A visual portfolio designed to let photography lead, with elegant spacing, fast image delivery, and a calm browsing experience.',
+        techStack: ['Next.js', 'JavaScript', 'CSS'],
+        features: ['Image-led presentation', 'Responsive gallery', 'Optimized media loading'],
+        projectUrl: 'https://github.com/Azan-Aly',
         bgImage: work3,
+        screenshots: [work3],
     },
     {
+        slug: 'ui-ux-designing',
         title: 'UI/UX designing',
         description: 'UI/UX Design',
+        longDescription: 'A complete interface design direction built around visual hierarchy, consistent components, and frictionless user journeys.',
+        techStack: ['Figma', 'Prototyping', 'Design systems'],
+        features: ['User flow mapping', 'High-fidelity screens', 'Component guidelines'],
+        projectUrl: 'https://github.com/Azan-Aly',
         bgImage: work4,
+        screenshots: [work4],
     },
 ]
 

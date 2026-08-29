@@ -4,7 +4,7 @@ import { assets } from '@/assets/assets'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-20 pb-8 flex flex-col items-center justify-center gap-2">
+    <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-22 pb-8 flex flex-col items-center justify-center gap-2">
       <div className='justify-center items-center flex'>
         <Image src={assets.hero_pic} alt='' className='rounded-full w-36 h-36 object-cover' />
       </div>

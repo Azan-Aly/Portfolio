@@ -14,10 +14,10 @@ export default function CertificationsPage() {
     <main className='min-h-screen bg-linear-to-br from-white via-fuchsia-50 to-cyan-50 px-[8%] py-10 text-gray-800'>
       <div className='mx-auto max-w-5xl'>
         <header className='flex items-center justify-between gap-6'>
-          <Link href='/' className='text-3xl font-semibold tracking-tight'>
+          <Link href='/#top' className='text-3xl font-semibold tracking-tight'>
             Azan<span className='text-fuchsia-600'>.</span>
           </Link>
-          <Link href='/' className='rounded-full border border-gray-400 px-5 py-2 text-sm transition hover:bg-black hover:text-white'>
+          <Link href='/#top' className='rounded-full border border-gray-400 px-5 py-2 text-sm transition hover:bg-black hover:text-white'>
             Back to portfolio
           </Link>
         </header>
