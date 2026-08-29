@@ -12,8 +12,8 @@ const Footer = () => {
             <Link href='#top'>
                 <span className="text-4xl text-gray-900 tracking-tight ml-6">Azan<span className="text-[#c026d3] font-bold">.</span></span>
             </Link>
-            <Link className='font-Ovo text-2xl mb-6 flex items-center gap-2 justify-center' href={"mailto:work.azan.dev@gmail.com"}>
-            <Image className='w-6' src={assets.mail_icon} alt='mailicon' />
+            <Link className='font-Ovo text-xl sm:text-2xl md:text-3xl mb-6 flex items-center gap-2 justify-center' href={"mailto:work.azan.dev@gmail.com"}>
+            <Image className='w-6 mt-1' src={assets.mail_icon} alt='mailicon' />
             work.azan.dev@gmail.com
             </Link>
             <Link href='/certifications' className='mb-6 text-sm text-gray-600 underline underline-offset-4 hover:text-fuchsia-700'>

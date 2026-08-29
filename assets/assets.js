@@ -19,6 +19,7 @@ import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
+import verify_badge from './verifybadge.png'
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
@@ -32,8 +33,8 @@ import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
-import web from './web.jpg';
-import app from './app.jpg';
+import web from './web.png';
+import app from './app.png';
 import backend from './backend.png';
 import frontend from './frontend.png';
 import circularText from "./circular-text.png";
@@ -140,6 +141,7 @@ export const assets = {
     menu_white,
     close_black,
     close_white,
+    verify_badge,
     web_icon,
     mobile_icon,
     ui_icon,

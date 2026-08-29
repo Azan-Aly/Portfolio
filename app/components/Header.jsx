@@ -5,12 +5,13 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-22 pb-8 flex flex-col items-center justify-center gap-2">
-      <div className='justify-center items-center flex'>
-        <Image src={assets.hero_pic} alt='' className='rounded-full w-36 h-36 object-cover' />
+      <div className='justify-center items-center flex relative'>
+        <Image src={assets.hero_pic} alt='heropic' className=' rounded-full w-36 h-36 object-cover' />
+        <Image src={assets.verify_badge} alt='verify' className='absolute bottom-0 right-2 w-8' />
       </div>
       <h2 className='flex items-center justify-center gap-2 text-xl md:text-2xl mb-1.5 font-Ovo'>
         Hi! I&apos;m Muhammad Azan Ali
-        <Image src={assets.hand_icon} alt='' className='w-6 ' />
+        <Image src={assets.hand_icon} alt='handicon' className='w-6 ' />
       </h2>
 
       <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
