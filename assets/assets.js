@@ -72,6 +72,11 @@ import work1 from "./public/work-1.png";
 import work2 from "./public/work-2.png";
 import work3 from "./public/work-3.png";
 import work4 from "./public/work-4.png";
+import resultone from "./result-checker-1.png";
+import resulttwo from "./result-checker-2.png";
+import resultthree from "./result-checker-3.png";
+import resultfour from "./result-checker-4.png";
+import resultfive from "./result-checker-5.png";
 import nodejsCertificate from './nodejs-udemy-certificate-azan.jpg';
 import agenticAiCertificate from './udemy-agenticai-certificate-azan.jpg';
 import dockerCertificate from './udemy-docker-certificate-azan.jpg';
@@ -172,15 +177,15 @@ export const workData = [
         screenshots: [work1],
     },
     {
-        slug: 'geo-based-app',
-        title: 'Geo based app',
-        description: 'Mobile App',
-        longDescription: 'A location-aware mobile experience that turns geographic data into a simple, useful workflow for people on the move.',
-        techStack: ['React Native', 'Node.js', 'MongoDB'],
-        features: ['Location-aware flows', 'Mobile-first UI', 'Fast data retrieval'],
-        projectUrl: 'https://github.com/Azan-Aly',
-        bgImage: work2,
-        screenshots: [work2],
+        slug: 'result-checker',
+        title: 'Result Checker',
+        description: 'Result Checker.',
+        longDescription: 'A simple and efficient web application for students to view their academic results in real-time.',
+        techStack: ['Next.js'],
+        features: ['Resut UI', 'Transcript of Result', 'Positon Holder', 'Analytics of result', 'Mobile-first UI', 'Fast data retrieval'],
+        projectUrl: 'https://resultcheckerbyazan.vercel.app/',
+        bgImage: resultone,
+        screenshots: [resultone, resulttwo, resultthree, resultfour, resultfive],
     },
     {
         slug: 'photography-site',
