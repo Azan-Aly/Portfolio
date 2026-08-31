@@ -72,10 +72,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="en" suppressHydrationWarning
       className={`${outfit.className} ${ovo.className} h-full antialiased overflow-x-hidden leading-8 scroll-smooth`}
     >
-      <body id="top" className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function() {
+              try{
+                const saved = localStorage.getItem("theme");
+                const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                const initial = saved || system;
+                if(initial === 'dark') document.documentElement.classList.add('dark');
+              } catch (e){}
+            })();`
+          }}
+        />
+      </head>
+      <body id="top" className="min-h-full flex flex-col dark:bg-[#11001F] dark:text-white">{children}</body>
     </html>
   );
 }

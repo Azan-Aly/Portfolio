@@ -21,6 +21,7 @@ import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import verify_badge from './verifybadge.png'
 import header_bg_color from './header-bg-color.png';
+import header_bg_color_two from './header-bg-color-two.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
@@ -133,6 +134,7 @@ export const assets = {
     download_icon,
     hand_icon,
     header_bg_color,
+    header_bg_color_two,
     moon_icon,
     sun_icon,
     arrow_icon,
@@ -295,30 +297,30 @@ export const serviceData = [
         icon: assets.web,
         title: 'Full Stack Web Development',
         description: 'End-to-end web applications built with modern architectures using React, Node.js, and clean code principles.',
-        link: ''
+        link: '#contact'
     },
     { 
         icon: assets.app, 
         title: 'Cross-Platform Mobile Apps', 
         description: 'Developing smooth, native-like iOS and Android mobile applications using React Native.', 
-        link: '' 
+        link: '#contact' 
     },
     {
         icon: assets.backend,
         title: 'API & Backend Engineering',
         description: 'Designing scalable RESTful & GraphQL APIs with Express.js, Node.js, secure authentication, and microservices.',
-        link: ''
+        link: '#contact'
     },
     {
         icon: assets.frontend,
         title: 'Frontend & UI Engineering',
-        description: 'Building responsive, high-performance, and accessible user interfaces with React, Next.js, and ......',
-        link: ''
+        description: 'Building responsive, high-performance, and accessible user interfaces with React, Next.js, and modern CSS frameworks.',
+        link: '#contact'
     },
 ];
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'React Js, Node Js, Express Js, Mongodb, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'React.js, Node.js, Express.js, MongoDB, Next.js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BS Computer Science (2023-2027)' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
 ];
@@ -345,7 +347,7 @@ export const toolsData = [
         image: assets.postman,
     },
     {
-        title: "Co-Pilot",
+        title: "GitHub Copilot",
         image: assets.githubCopilot,
     },
     {
@@ -357,7 +359,7 @@ export const toolsData = [
         image: assets.antigravity,
     },
     {
-        title: "Chat GPT",
+        title: "ChatGPT",
         image: assets.chatgpt,
     },
     {
@@ -393,11 +395,11 @@ export const techstackData = [
         image: assets.tailwind
     },
     {
-        title: "BootStrap",
+        title: "Bootstrap",
         image: assets.bootstrap
     },
     {
-        title: "Jquery",
+        title: "jQuery",
         image: assets.jquery
     },
     {
@@ -417,7 +419,7 @@ export const techstackData = [
         image: assets.mongodb
     },
     {
-        title: "My SQL",
+        title: "MySQL",
         image: assets.mysql
     },
     {

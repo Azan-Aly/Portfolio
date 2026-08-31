@@ -8,34 +8,73 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {
-  const personSchema = {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const cleanSiteUrl = siteUrl.replace(/\/$/, "");
+
+  const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Muhammad Azan Ali",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-    jobTitle: "Full-Stack Developer",
-    description:
-      "Pakistan-based full-stack developer specializing in React, Next.js, Node.js, and MongoDB.",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "PK",
-    },
-    sameAs: [
-      "https://github.com/Azan-Aly",
-      "https://www.linkedin.com/in/azanaly/",
-      "https://facebook.com/mr.azanaly",
-      "https://www.instagram.com/mr.azan_aly",
-    ],
-    knowsAbout: [
-      "React",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "PostgreSQL",
-      "React Native",
-      "REST APIs",
-      "GraphQL",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${cleanSiteUrl}/#person`,
+        name: "Muhammad Azan Ali",
+        alternateName: ["Azan Ali", "Azan Dev"],
+        url: cleanSiteUrl,
+        jobTitle: "Full-Stack Developer",
+        description:
+          "Pakistan-based full-stack developer specializing in React, Next.js, Node.js, Express, MongoDB, and AI-assisted web applications.",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "PK",
+        },
+        sameAs: [
+          "https://github.com/Azan-Aly",
+          "https://www.linkedin.com/in/azanaly/",
+          "https://facebook.com/mr.azanaly",
+          "https://www.instagram.com/mr.azan_aly",
+        ],
+        knowsAbout: [
+          "Full-Stack Web Development",
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "React Native",
+          "RESTful APIs",
+          "GraphQL",
+          "TypeScript",
+          "Tailwind CSS",
+          "AI Application Integration",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${cleanSiteUrl}/#website`,
+        url: cleanSiteUrl,
+        name: "Muhammad Azan Ali Portfolio",
+        description: "Official portfolio of Muhammad Azan Ali, Full-Stack Developer based in Pakistan.",
+        publisher: {
+          "@id": `${cleanSiteUrl}/#person`,
+        },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": `${cleanSiteUrl}/#webpage`,
+        url: cleanSiteUrl,
+        name: "Muhammad Azan Ali | Full-Stack Developer in Pakistan",
+        isPartOf: {
+          "@id": `${cleanSiteUrl}/#website`,
+        },
+        about: {
+          "@id": `${cleanSiteUrl}/#person`,
+        },
+        mainEntity: {
+          "@id": `${cleanSiteUrl}/#person`,
+        },
+      },
     ],
   };
 
@@ -44,7 +83,7 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
         }}
       />
       <Navbar />

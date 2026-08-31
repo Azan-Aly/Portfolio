@@ -47,6 +47,7 @@ export default function OpenGraphImage() {
         </div>
         <div
           style={{
+            alignSelf: "flex-start",
             background: "#111827",
             borderRadius: 999,
             color: "#ffffff",
@@ -54,7 +55,6 @@ export default function OpenGraphImage() {
             fontSize: 24,
             marginTop: 48,
             padding: "14px 28px",
-            width: "fit-content",
           }}
         >
           Building scalable web experiences from Pakistan
