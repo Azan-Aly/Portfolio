@@ -77,6 +77,11 @@ import resulttwo from "./result-checker-2.png";
 import resultthree from "./result-checker-3.png";
 import resultfour from "./result-checker-4.png";
 import resultfive from "./result-checker-5.png";
+import musicone from "./music.png";
+import musictwo from "./musictwo.png";
+import musicthree from "./musicthree.png";
+import musicfour from "./musicfour.png";
+import musicfive from "./musicfive.png";
 import nodejsCertificate from './nodejs-udemy-certificate-azan.jpg';
 import agenticAiCertificate from './udemy-agenticai-certificate-azan.jpg';
 import dockerCertificate from './udemy-docker-certificate-azan.jpg';
@@ -166,15 +171,15 @@ export const assets = {
 
 export const workData = [
     {
-        slug: 'frontend-project',
-        title: 'Frontend project',
-        description: 'Web Design',
-        longDescription: 'A polished frontend experience focused on clear information architecture, responsive layouts, and thoughtful interaction details across every screen size.',
-        techStack: ['React', 'Next.js', 'Tailwind CSS'],
-        features: ['Responsive interface', 'Reusable component system', 'Accessible interaction patterns'],
-        projectUrl: 'https://github.com/Azan-Aly',
-        bgImage: work1,
-        screenshots: [work1],
+        slug: 'music-streaming-app',
+        title: 'Music Streaming App',
+        description: 'Music Streaming App.',
+        longDescription: 'A modern music streaming platform with a sleek interface, personalized playlists, and seamless audio playback across devices.',
+        techStack: ['React', 'Node.js', 'Tailwind CSS', 'MongoDB'],
+        features: ['Personalized playlists', 'Smart music discovery', 'Responsive streaming UI', 'Accessible interaction patterns'],
+        projectUrl: 'https://streammusic-kappa.vercel.app/',
+        bgImage: musicone,
+        screenshots: [musicone, musictwo, musicthree, musicfour, musicfive],
     },
     {
         slug: 'result-checker',
@@ -184,7 +189,7 @@ export const workData = [
         techStack: ['Next.js'],
         features: ['Resut UI', 'Transcript of Result', 'Positon Holder', 'Analytics of result', 'Mobile-first UI', 'Fast data retrieval'],
         projectUrl: 'https://resultcheckerbyazan.vercel.app/',
-        bgImage: resultone,
+        bgImage: resultthree,
         screenshots: [resultone, resulttwo, resultthree, resultfour, resultfive],
     },
     {
@@ -192,7 +197,7 @@ export const workData = [
         title: 'Photography site',
         description: 'Web Design',
         longDescription: 'A visual portfolio designed to let photography lead, with elegant spacing, fast image delivery, and a calm browsing experience.',
-        techStack: ['Next.js', 'JavaScript', 'CSS'],
+        techStack: ['Next.js', 'JavaScript', 'MongoDB'],
         features: ['Image-led presentation', 'Responsive gallery', 'Optimized media loading'],
         projectUrl: 'https://github.com/Azan-Aly',
         bgImage: work3,
