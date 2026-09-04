@@ -35,28 +35,28 @@ body {
 /* 2XL / Ultra-wide Screens (>= 1536px) */
 @media (min-width: 1536px) {
   .pullcord {
-    --pullcord-right: calc(4% + 0.5rem);
+    --pullcord-right: calc(1% + 0.5rem);
   }
 }
 
 /* Extra Large Screens / Standard Desktop (1280px - 1535px) */
 @media (min-width: 1280px) and (max-width: 1535px) {
   .pullcord {
-    --pullcord-right: 3rem;
+    --pullcord-right: 0.1rem;
   }
 }
 
 /* Large Screens / Small Laptops (1024px - 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1022px) and (max-width: 1279px) {
   .pullcord {
-    --pullcord-right: 2rem;
+    --pullcord-right: 0.1rem;
   }
 }
 
 /* Tablets (768px - 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1021px) {
   .pullcord {
-    --pullcord-right: 1px;
+    --pullcord-right: 2rem;
   }
 }
 

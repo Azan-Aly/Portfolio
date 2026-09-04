@@ -82,6 +82,11 @@ import musictwo from "./musictwo.png";
 import musicthree from "./musicthree.png";
 import musicfour from "./musicfour.png";
 import musicfive from "./musicfive.png";
+import sniplyone from "./sniplyone.png";
+import sniplytwo from "./sniplytwo.png";
+import sniplythree from "./sniplythree.png";
+import sniplyfour from "./sniplyfour.png";
+import sniplyfive from "./sniplyfive.png";
 import nodejsCertificate from './nodejs-udemy-certificate-azan.jpg';
 import agenticAiCertificate from './udemy-agenticai-certificate-azan.jpg';
 import dockerCertificate from './udemy-docker-certificate-azan.jpg';
@@ -175,7 +180,7 @@ export const workData = [
         title: 'Music Streaming App',
         description: 'Music Streaming App.',
         longDescription: 'A modern music streaming platform with a sleek interface, personalized playlists, and seamless audio playback across devices.',
-        techStack: ['React', 'Node.js', 'Tailwind CSS', 'MongoDB'],
+        techStack: ['React', 'Node.js', 'Tailwind CSS', 'Express.js', 'MongoDB'],
         features: ['Personalized playlists', 'Smart music discovery', 'Responsive streaming UI', 'Accessible interaction patterns'],
         projectUrl: 'https://streammusic-kappa.vercel.app/',
         bgImage: musicone,
@@ -193,15 +198,15 @@ export const workData = [
         screenshots: [resultone, resulttwo, resultthree, resultfour, resultfive],
     },
     {
-        slug: 'photography-site',
-        title: 'Photography site',
-        description: 'Web Design',
-        longDescription: 'A visual portfolio designed to let photography lead, with elegant spacing, fast image delivery, and a calm browsing experience.',
-        techStack: ['Next.js', 'JavaScript', 'MongoDB'],
-        features: ['Image-led presentation', 'Responsive gallery', 'Optimized media loading'],
-        projectUrl: 'https://github.com/Azan-Aly',
-        bgImage: work3,
-        screenshots: [work3],
+        slug: 'sniply-site',
+        title: 'Sniply',
+        description: 'URL Shortener.',
+        longDescription: 'A URL shortening service that allows users to create short, shareable links with customizable call-to-action overlays for enhanced engagement.',
+        techStack: ['JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT Authentication'],
+        features: ['URL Shortening', 'Responsive Design', 'Optimized media loading'],
+        projectUrl: 'https://sniplyy.vercel.app/',
+        bgImage: sniplyone,
+        screenshots: [sniplyone, sniplytwo, sniplythree, sniplyfour, sniplyfive],
     },
     {
         slug: 'ui-ux-designing',
