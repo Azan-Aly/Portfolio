@@ -1,20 +1,20 @@
 import { workData } from "@/assets/assets";
+import { cleanSiteUrl } from "./site-url";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+export const dynamic = "force-static";
 
 export default function sitemap() {
-  const baseUrl = siteUrl.replace(/\/$/, "");
   const now = new Date();
 
   const staticPages = [
     {
-      url: `${baseUrl}/`,
+      url: `${cleanSiteUrl}/`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/certifications`,
+      url: `${cleanSiteUrl}/certifications`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -22,7 +22,7 @@ export default function sitemap() {
   ];
 
   const projectPages = workData.map(({ slug }) => ({
-    url: `${baseUrl}/work/${slug}`,
+    url: `${cleanSiteUrl}/work/${slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.7,

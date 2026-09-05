@@ -193,7 +193,7 @@ export const workData = [
         longDescription: 'A simple and efficient web application for students to view their academic results in real-time.',
         techStack: ['Next.js'],
         features: ['Resut UI', 'Transcript of Result', 'Positon Holder', 'Analytics of result', 'Mobile-first UI', 'Fast data retrieval'],
-        projectUrl: 'https://resultcheckerbyazan.vercel.app/',
+        projectUrl: 'https://check-your-result.vercel.app/',
         bgImage: resultthree,
         screenshots: [resultone, resulttwo, resultthree, resultfour, resultfive],
     },
@@ -208,17 +208,17 @@ export const workData = [
         bgImage: sniplyone,
         screenshots: [sniplyone, sniplytwo, sniplythree, sniplyfour, sniplyfive],
     },
-    {
-        slug: 'ui-ux-designing',
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        longDescription: 'A complete interface design direction built around visual hierarchy, consistent components, and frictionless user journeys.',
-        techStack: ['Figma', 'Prototyping', 'Design systems'],
-        features: ['User flow mapping', 'High-fidelity screens', 'Component guidelines'],
-        projectUrl: 'https://github.com/Azan-Aly',
-        bgImage: work4,
-        screenshots: [work4],
-    },
+    // {
+    //     slug: 'ui-ux-designing',
+    //     title: 'UI/UX designing',
+    //     description: 'UI/UX Design',
+    //     longDescription: 'A complete interface design direction built around visual hierarchy, consistent components, and frictionless user journeys.',
+    //     techStack: ['Figma', 'Prototyping', 'Design systems'],
+    //     features: ['User flow mapping', 'High-fidelity screens', 'Component guidelines'],
+    //     projectUrl: 'https://github.com/Azan-Aly',
+    //     bgImage: work4,
+    //     screenshots: [work4],
+    // },
 ]
 
 export const certificateData = [

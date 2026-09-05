@@ -2,9 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { certificateData } from '@/assets/assets'
 import verifyBadge from '@/assets/verifybadge.png'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-const cleanSiteUrl = siteUrl.replace(/\/$/, "");
+import { cleanSiteUrl } from '@/app/site-url'
 
 export const metadata = {
   title: "Certifications",

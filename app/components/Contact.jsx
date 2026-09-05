@@ -18,11 +18,14 @@ const Contact = () => {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const accessKey =
-      process.env.NEXT_PUBLIC_WEB3_FORM_ACCESS_KEY ||
-      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
-      process.env.WEB3_FORM_ACCESS_KEY ||
-      "4538b3d7-07cc-424d-bbd0-b760f89ed449";
+    const accessKey = process.env.NEXT_PUBLIC_WEB3_FORM_ACCESS_KEY;
+
+    if (!accessKey) {
+      setIsSuccess(false);
+      setResult("The contact form is not configured. Please email work.azan.dev@gmail.com directly.");
+      setIsSubmitting(false);
+      return;
+    }
 
     formData.append("access_key", accessKey);
 
@@ -51,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className='w-full px-[10%] sm:px-[12%] mb-12 py-16 scroll-mt-20 dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_40%,rgba(168,85,247,0.15),transparent_70%)] bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:text-white'>
+    <section id='contact' className='w-full px-[10%] sm:px-[12%] mb-12 py-16 scroll-mt-20 dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_40%,rgba(168,85,247,0.15),transparent_70%)] bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-size-[90%_auto] dark:text-white'>
       <p className='text-center mb-2 text-lg font-Ovo text-slate-700 dark:text-slate-200'>Let&apos;s work together</p>
       <h2 className='text-center text-5xl font-Ovo dark:text-white'>Contact me</h2>
       <p className='max-w-2xl mx-auto mt-6 text-center font-Ovo text-slate-700 dark:text-slate-300 leading-relaxed'>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { workData } from '@/assets/assets'
+import { cleanSiteUrl } from '@/app/site-url'
 
 export function generateStaticParams() {
   return workData.map(({ slug }) => ({ slug }))
@@ -10,9 +11,6 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const project = workData.find((item) => item.slug === slug)
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
-  const cleanSiteUrl = siteUrl.replace(/\/$/, "")
-
   if (!project) return {}
 
   return {
@@ -46,9 +44,6 @@ export async function generateMetadata({ params }) {
 export default async function ProjectDetails({ params }) {
   const { slug } = await params
   const project = workData.find((item) => item.slug === slug)
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
-  const cleanSiteUrl = siteUrl.replace(/\/$/, "")
-
   if (!project) {
     notFound()
   }

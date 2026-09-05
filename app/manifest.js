@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 export default function manifest() {
   return {
     name: "Muhammad Azan Ali | Full-Stack Developer",
@@ -19,4 +21,4 @@ export default function manifest() {
     ],
     lang: "en",
   };
-}
+}

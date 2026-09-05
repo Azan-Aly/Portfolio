@@ -6,11 +6,9 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { cleanSiteUrl } from "./site-url";
 
 export default function Home() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const cleanSiteUrl = siteUrl.replace(/\/$/, "");
-
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
