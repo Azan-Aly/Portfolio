@@ -52,7 +52,7 @@ export default function CertificationsPage() {
           <Link href='/#top' className='text-3xl font-semibold tracking-tight text-gray-900 dark:text-white'>
             Azan<span className='text-fuchsia-600'>.</span>
           </Link>
-          <Link href='/#top' className='rounded-full border border-gray-400 px-5 py-2 text-sm text-slate-800 transition hover:bg-black hover:text-white dark:border-slate-600 dark:text-slate-200 dark:hover:bg-white dark:hover:text-black'>
+          <Link href='/#top' className='rounded-full border border-gray-400 px-5 py-2 text-sm text-slate-800 transition hover:bg-black active:bg-black hover:text-white active:text-white dark:border-slate-600 dark:text-slate-200 dark:hover:bg-white dark:active:bg-white dark:hover:text-black dark:active:text-black'>
             Back to portfolio
           </Link>
         </header>
@@ -70,13 +70,13 @@ export default function CertificationsPage() {
 
         <section className='grid gap-6 pb-16 md:grid-cols-2' aria-label='Certificates'>
           {certificateData.map(({ title, issuer, date, image }) => (
-            <article key={title} className='group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-fuchsia-300 hover:shadow-2xl hover:shadow-fuchsia-500/20 dark:border-slate-800 dark:bg-[#18092a] dark:hover:border-fuchsia-500/60 dark:hover:shadow-[0_12px_35px_rgba(217,70,239,0.3)]'>
+            <article key={title} className='group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 active:-translate-y-1.5 hover:border-fuchsia-300 active:border-fuchsia-300 hover:shadow-2xl active:shadow-2xl hover:shadow-fuchsia-500/20 active:shadow-fuchsia-500/20 dark:border-slate-800 dark:bg-[#18092a] dark:hover:border-fuchsia-500/60 dark:active:border-fuchsia-500/60 dark:hover:shadow-[0_12px_35px_rgba(217,70,239,0.3)] dark:active:shadow-[0_12px_35px_rgba(217,70,239,0.3)]'>
               <div className='overflow-hidden'>
-                <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105' />
+                <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 group-active:scale-105' />
               </div>
               <div className='p-6'>
                 <p className='text-sm font-semibold uppercase tracking-wide text-fuchsia-700 dark:text-fuchsia-400'>{issuer}</p>
-                <h2 className='mt-2 font-Ovo text-xl leading-7 text-slate-900 dark:text-slate-100 font-semibold group-hover:text-fuchsia-700 dark:group-hover:text-fuchsia-300 transition-colors'>{title}</h2>
+                <h2 className='mt-2 font-Ovo text-xl leading-7 text-slate-900 dark:text-slate-100 font-semibold group-hover:text-fuchsia-700 group-active:text-fuchsia-700 dark:group-hover:text-fuchsia-300 dark:group-active:text-fuchsia-300 transition-colors'>{title}</h2>
                 <p className='mt-3 text-sm text-slate-500 dark:text-slate-400'>Completed {date}</p>
               </div>
             </article>
@@ -89,10 +89,10 @@ export default function CertificationsPage() {
             Explore the work behind the skills or get in touch to discuss a web, API, or mobile project.
           </p>
           <div className='mt-6 flex flex-wrap justify-center gap-4'>
-            <Link href='/#work' className='rounded-full bg-black px-6 py-3 text-white transition hover:scale-105 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500'>
+            <Link href='/#work' className='rounded-full bg-black px-6 py-3 text-white transition hover:scale-105 active:scale-95 dark:bg-fuchsia-600 dark:hover:bg-fuchsia-500 dark:active:bg-fuchsia-500'>
               View my work
             </Link>
-            <a href='mailto:work.azan.dev@gmail.com' className='rounded-full border border-gray-400 px-6 py-3 text-slate-800 transition hover:bg-black hover:text-white hover:scale-105 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-white dark:hover:text-black'>
+            <a href='mailto:work.azan.dev@gmail.com' className='rounded-full border border-gray-400 px-6 py-3 text-slate-800 transition hover:bg-black active:bg-black hover:text-white active:text-white hover:scale-105 active:scale-95 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-white dark:active:bg-white dark:hover:text-black dark:active:text-black'>
               Contact me
             </a>
           </div>

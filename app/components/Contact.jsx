@@ -22,7 +22,7 @@ const Contact = () => {
 
     if (!accessKey) {
       setIsSuccess(false);
-      setResult("The contact form is not configured. Please email work.azan.dev@gmail.com directly.");
+      setResult("This form is temporarily unavailable. Please email work.azan.dev@gmail.com directly.");
       setIsSubmitting(false);
       return;
     }
@@ -35,19 +35,27 @@ const Contact = () => {
         body: formData,
       });
 
-      const data = await response.json();
+      let data;
 
-      if (data.success) {
+      try {
+        data = await response.json();
+      } catch {
+        throw new Error("The form service returned an invalid response.");
+      }
+
+      if (response.ok && data.success) {
         setIsSuccess(true);
-        setResult("Thank you! Your message has been sent successfully.");
+        setResult("Message sent successfully. I'll get back to you soon.");
         form.reset();
       } else {
         setIsSuccess(false);
-        setResult(data.message || "Something went wrong. Please try again.");
+        setResult(data.message || "Your message could not be sent. Please try again in a moment.");
       }
-    } catch {
+    } catch (error) {
       setIsSuccess(false);
-      setResult("Network error. Please check your internet connection or email directly at work.azan.dev@gmail.com.");
+      setResult(error instanceof Error && error.message !== "Failed to fetch"
+        ? "The contact service returned an unexpected response. Please try again or email work.azan.dev@gmail.com directly."
+        : "We couldn't connect to the contact service. Please check your connection or email work.azan.dev@gmail.com directly.");
     } finally {
       setIsSubmitting(false);
     }
@@ -69,14 +77,18 @@ const Contact = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className='py-3.5 px-10 w-max flex items-center justify-center gap-3 bg-black dark:bg-white text-white dark:text-black font-medium rounded-full cursor-pointer mx-auto transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed shadow-md hover:shadow-lg'
+          className='py-3.5 px-10 w-max flex items-center justify-center gap-3 bg-black dark:bg-white text-white dark:text-black font-medium rounded-full cursor-pointer mx-auto transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed shadow-md hover:shadow-lg active:shadow-lg'
         >
           <span>{isSubmitting ? 'Sending...' : 'Submit now'}</span>
           <Image src={assets.right_arrow_white} alt='' className='w-4 dark:invert' />
         </button>
 
         {result && (
-          <p className={`mt-6 text-center text-sm font-medium ${isSuccess === true ? 'text-emerald-600 dark:text-emerald-400' : isSuccess === false ? 'text-rose-600 dark:text-rose-400' : 'text-slate-700 dark:text-slate-300'}`}>
+          <p
+            role={isSuccess === false ? 'alert' : 'status'}
+            aria-live='polite'
+            className={`mt-6 text-center text-sm font-medium ${isSuccess === true ? 'text-emerald-600 dark:text-emerald-400' : isSuccess === false ? 'text-rose-600 dark:text-rose-400' : 'text-slate-700 dark:text-slate-300'}`}
+          >
             {result}
           </p>
         )}

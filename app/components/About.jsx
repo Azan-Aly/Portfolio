@@ -21,7 +21,7 @@ const About = () => {
 
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                         {infoList.map(({icon, iconDark, title, description}, index)=>(
-                            <li key={index} className='border-[0.5px] border-gray-400  cursor-pointer dark:border-slate-700 rounded-3xl p-6 hover:shadow-xl hover:shadow-fuchsia-200/40 dark:hover:shadow-fuchsia-500/20 hover:bg-[#fcf4ff] dark:hover:bg-white/5 hover:-translate-y-1 transition-all duration-300'>
+                            <li key={index} className='border-[0.5px] border-gray-400 cursor-pointer dark:border-slate-700 rounded-3xl p-6 hover:shadow-xl active:shadow-xl hover:shadow-fuchsia-200/40 active:shadow-fuchsia-200/40 dark:hover:shadow-fuchsia-500/20 dark:active:shadow-fuchsia-500/20 hover:bg-[#fcf4ff] active:bg-[#fcf4ff] dark:hover:bg-white/5 dark:active:bg-white/5 hover:-translate-y-1 active:-translate-y-1 transition-all duration-300'>
                                 <Image src={icon} alt={title} className='w-7 mt-3 dark:hidden' />
                                 <Image src={iconDark || icon} alt={title} className='w-7 mt-3 hidden dark:block' />
                                 <h3 className='my-4 font-semibold text-gray-700 dark:text-slate-200'>{title}</h3>

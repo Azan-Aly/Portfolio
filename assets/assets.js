@@ -182,7 +182,7 @@ export const workData = [
         longDescription: 'A modern music streaming platform with a sleek interface, personalized playlists, and seamless audio playback across devices.',
         techStack: ['React', 'Node.js', 'Tailwind CSS', 'Express.js', 'MongoDB'],
         features: ['Personalized playlists', 'Smart music discovery', 'Responsive streaming UI', 'Accessible interaction patterns'],
-        projectUrl: 'https://streammusic-kappa.vercel.app/',
+        projectUrl: 'https://stream-music-beta.vercel.app/',
         bgImage: musicone,
         screenshots: [musicone, musictwo, musicthree, musicfour, musicfive],
     },

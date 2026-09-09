@@ -74,7 +74,7 @@ export default async function ProjectDetails({ params }) {
       />
       <main className='min-h-screen bg-white px-6 py-10 text-slate-800 transition-colors duration-300 dark:bg-[#11001F] dark:text-slate-100 md:px-12 lg:px-20'>
       <div className='mx-auto max-w-6xl'>
-        <Link href='/#work' className='inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-violet-600 transition hover:text-fuchsia-600 dark:text-violet-400 dark:hover:text-fuchsia-300'>
+        <Link href='/#work' className='inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-violet-600 transition hover:text-fuchsia-600 active:text-fuchsia-600 dark:text-violet-400 dark:hover:text-fuchsia-300 dark:active:text-fuchsia-300'>
           <span aria-hidden='true'>←</span> Back to work
         </Link>
 
@@ -83,7 +83,7 @@ export default async function ProjectDetails({ params }) {
             <p className='mb-4 font-mono text-xs uppercase tracking-[0.28em] text-fuchsia-500 dark:text-fuchsia-400'>{description}</p>
             <h1 className='max-w-3xl font-Ovo text-5xl font-bold leading-tight text-slate-900 dark:text-white md:text-7xl'>{title}</h1>
             <p className='mt-6 max-w-2xl font-mono text-sm leading-7 text-slate-600 dark:text-slate-300'>{longDescription}</p>
-            <a href={projectUrl} target='_blank' rel='noopener noreferrer' className='mt-8 inline-flex items-center gap-3 rounded-full border border-violet-300 bg-violet-50 px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-violet-700 transition hover:border-violet-500 hover:bg-violet-100 dark:border-violet-500/40 dark:bg-[#1b0a2e]/70 dark:text-violet-200 dark:hover:bg-[#25103d]'>
+            <a href={projectUrl} target='_blank' rel='noopener noreferrer' className='mt-8 inline-flex items-center gap-3 rounded-full border border-violet-300 bg-violet-50 px-6 py-3 font-mono text-xs uppercase tracking-[0.18em] text-violet-700 transition hover:border-violet-500 active:border-violet-500 hover:bg-violet-100 active:bg-violet-100 dark:border-violet-500/40 dark:bg-[#1b0a2e]/70 dark:text-violet-200 dark:hover:bg-[#25103d] dark:active:bg-[#25103d]'>
               Open live project <span className='text-base'>↗</span>
             </a>
           </div>

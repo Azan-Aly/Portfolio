@@ -17,7 +17,7 @@ const ThemeToggle = ({ theme, onToggle }) => {
             type='button'
             onClick={onToggle}
             aria-label='Toggle dark mode'
-            className='p-2 rounded-full bg-transparent text-slate-700 transition hover:scale-110 dark:text-slate-100 cursor-pointer'>
+            className='p-2 rounded-full bg-transparent text-slate-700 transition hover:scale-110 active:scale-95 dark:text-slate-100 cursor-pointer'>
             {theme === 'dark' ? sunIcon() : moonIcon()}
         </button>
     )
