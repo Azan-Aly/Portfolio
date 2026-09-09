@@ -15,6 +15,14 @@ body {
   color: #0f172a;
 }
 
+button,
+a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
 .dark body {
   background: #11001f;
   color: #f8fafc;

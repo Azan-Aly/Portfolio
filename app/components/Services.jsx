@@ -15,7 +15,7 @@ const Services = () => {
 
             <div className='gridContainer gap-6 my-10'>
                 {serviceData.map(({icon, title, description, link}, index) => (
-                    <div key={index} className='flex flex-col justify-between border border-gray-300 dark:border-slate-700 rounded-3xl p-6 hover:shadow-xl active:shadow-xl hover:shadow-fuchsia-200/40 active:shadow-fuchsia-200/40 dark:hover:shadow-fuchsia-500/20 dark:active:shadow-fuchsia-500/20 hover:bg-[#fcf4ff] active:bg-[#fcf4ff] dark:hover:bg-white/5 dark:active:bg-white/5 hover:-translate-y-1 active:-translate-y-1 transition-all duration-300'>
+                    <div key={index} className='select-none flex flex-col justify-between border border-gray-300 dark:border-slate-700 rounded-3xl p-6 hover:shadow-xl active:shadow-xl hover:shadow-fuchsia-200/40 active:shadow-fuchsia-200/40 dark:hover:shadow-fuchsia-500/20 dark:active:shadow-fuchsia-500/20 hover:bg-[#fcf4ff] active:bg-[#fcf4ff] dark:hover:bg-white/5 dark:active:bg-white/5 hover:-translate-y-1 active:-translate-y-1 transition-all duration-300'>
                         <div>
                             <Image className='w-16 h-16 object-contain' src={icon} alt={title} />
                             <h3 className='text-lg font-semibold my-4 text-gray-800 dark:text-slate-200'>{title}</h3>

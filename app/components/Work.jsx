@@ -18,7 +18,7 @@ const Work = () => {
         {workData.map(({ slug, title, description, bgImage, projectUrl }, index) => (
           <article
             key={title}
-            className={`group relative isolate min-h-97.5 overflow-hidden rounded-[22px] border border-violet-200/80 bg-slate-100 transition-all duration-500 hover:-translate-y-2 active:-translate-y-2 hover:shadow-2xl active:shadow-2xl hover:shadow-violet-400/25 active:shadow-violet-400/25 dark:border-violet-500/20 dark:bg-[#160d27] dark:hover:border-fuchsia-400/60 dark:active:border-fuchsia-400/60 dark:hover:shadow-[0_12px_45px_rgba(217,70,239,0.35),0_0_25px_rgba(139,92,246,0.3),0_0_15px_rgba(6,182,212,0.2)] dark:active:shadow-[0_12px_45px_rgba(217,70,239,0.35),0_0_25px_rgba(139,92,246,0.3),0_0_15px_rgba(6,182,212,0.2)] md:min-h-105 ${index === 0 ? 'md:col-span-7' : index === 1 ? 'md:col-span-5' : index === 2 ? 'md:col-span-4' : 'md:col-span-8'}`}
+            className={`group select-none relative isolate min-h-97.5 overflow-hidden rounded-[22px] border border-violet-200/80 bg-slate-100 transition-all duration-500 hover:-translate-y-2 active:-translate-y-2 hover:shadow-2xl active:shadow-2xl hover:shadow-violet-400/25 active:shadow-violet-400/25 dark:border-violet-500/20 dark:bg-[#160d27] dark:hover:border-fuchsia-400/60 dark:active:border-fuchsia-400/60 dark:hover:shadow-[0_12px_45px_rgba(217,70,239,0.35),0_0_25px_rgba(139,92,246,0.3),0_0_15px_rgba(6,182,212,0.2)] dark:active:shadow-[0_12px_45px_rgba(217,70,239,0.35),0_0_25px_rgba(139,92,246,0.3),0_0_15px_rgba(6,182,212,0.2)] md:min-h-105 ${index === 0 ? 'md:col-span-7' : index === 1 ? 'md:col-span-5' : index === 2 ? 'md:col-span-4' : 'md:col-span-8'}`}
           >
             <Image
               src={bgImage}

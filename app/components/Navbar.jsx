@@ -96,7 +96,7 @@ const Navbar = () => {
                     </Link>
 
                     <ThemeToggle theme={theme} onToggle={toggleTheme} />
-                    <button type='button' aria-label='Open navigation menu' className='block md:hidden ml-1 sm:ml-2 cursor-pointer p-1 rounded-lg border border-transparent dark:border-slate-600' onClick={openMenu}>
+                    <button type='button' aria-label='Open navigation menu' className='block md:hidden ml-1 sm:ml-2 cursor-pointer p-1 rounded-lg border border-transparent' onClick={openMenu}>
                         <Image src={assets.menu_black} alt='' className='w-6 dark:hidden' />
                         <Image src={assets.menu_white} alt='' className='w-6 hidden dark:block' />
                     </button>

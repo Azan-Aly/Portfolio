@@ -14,9 +14,9 @@ const TechCard = ({ tool }) => {
                 aria-label={`Show details for ${tool.title}`}
                 aria-pressed={isFlipped}
                 onClick={() => setIsFlipped((current) => !current)}
-                className='block h-full w-full cursor-pointer outline-none transition-transform duration-500 hover:-translate-y-2 active:-translate-y-2 focus-visible:-translate-y-2'
+                className='block h-full w-full cursor-pointer select-none touch-manipulation outline-none transition-transform duration-500 md:hover:-translate-y-2 focus-visible:-translate-y-2'
             >
-                <div className={`relative h-full w-full transform-3d transition-transform duration-700 group-hover:transform-[rotateY(180deg)] ${isFlipped ? 'transform-[rotateY(180deg)]' : ''}`}>
+                <div className={`relative h-full w-full transform-3d transition-transform duration-700 md:group-hover:transform-[rotateY(180deg)] ${isFlipped ? 'transform-[rotateY(180deg)]' : ''}`}>
                     <div className='absolute inset-0 flex items-center justify-center backface-hidden'>
                         <Image src={tool.image} alt={tool.title} className='w-16 sm:w-32' />
                     </div>
