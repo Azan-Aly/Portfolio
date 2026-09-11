@@ -3,6 +3,7 @@ import hero from './hero.png'
 import main_pic from './main.png'
 import center_pic from './centerimg.png'
 import newpic from './new.png'
+import prof from './prof.png'
 import first from './first.png'
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -142,6 +143,7 @@ export const assets = {
     project_icon_dark,
     firebase,
     figma,
+    prof,
     right_arrow_white,
     logo_dark,
     mail_icon,

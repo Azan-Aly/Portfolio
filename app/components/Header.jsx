@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto min-h-[min(100dvh,52rem)] pt-22 pb-8 flex flex-col items-center justify-center gap-2 dark:text-white">
       <div className='justify-center items-center flex relative'>
-        <Image src={assets.hero_pic} alt='Muhammad Azan Ali' priority className='rounded-full w-36 h-36 object-cover shadow-md' />
+        <Image src={assets.prof} alt='Muhammad Azan Ali' priority className='rounded-full w-36 h-36 object-cover shadow-md' />
         <Image src={assets.verify_badge} alt='Verified' className='absolute bottom-0 right-2 w-8' />
       </div>
       <h2 className='flex items-center justify-center gap-2 text-xl md:text-2xl mb-1.5 font-Ovo dark:text-white'>
