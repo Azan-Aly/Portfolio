@@ -69,10 +69,11 @@ export default function CertificationsPage() {
         </section>
 
         <section className='grid gap-6 pb-16 md:grid-cols-2' aria-label='Certificates'>
-          {certificateData.map(({ title, issuer, date, image }) => (
+          {certificateData.map(({ title, issuer, date, image }, idx) => (
             <article key={title} className='group select-none overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 active:-translate-y-1.5 hover:border-fuchsia-300 active:border-fuchsia-300 hover:shadow-2xl active:shadow-2xl hover:shadow-fuchsia-500/20 active:shadow-fuchsia-500/20 dark:border-slate-800 dark:bg-[#18092a] dark:hover:border-fuchsia-500/60 dark:active:border-fuchsia-500/60 dark:hover:shadow-[0_12px_35px_rgba(217,70,239,0.3)] dark:active:shadow-[0_12px_35px_rgba(217,70,239,0.3)]'>
               <div className='overflow-hidden'>
-                <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 group-active:scale-105' />
+                <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 group-active:scale-105' {...(idx === 0 && { priority: true, loading: "eager" })} />
+
               </div>
               <div className='p-6'>
                 <p className='text-sm font-semibold uppercase tracking-wide text-fuchsia-700 dark:text-fuchsia-400'>{issuer}</p>

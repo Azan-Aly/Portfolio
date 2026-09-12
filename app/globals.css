@@ -89,3 +89,69 @@ a {
   }
 }
 
+/* ── Skeleton Shimmer Loading ── */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #e8e8ee 25%,
+    #f3f3f8 37%,
+    #e8e8ee 63%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.skeleton-outline {
+  background: transparent;
+  border: 1.5px solid #e2e2ea;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-outline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 25%,
+    rgba(0, 0, 0, 0.03) 37%,
+    transparent 63%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Dark mode skeleton */
+:is(.dark, .dark *) .skeleton {
+  background: linear-gradient(
+    90deg,
+    #1e1233 25%,
+    #2a1a45 37%,
+    #1e1233 63%
+  );
+  background-size: 800px 100%;
+}
+
+:is(.dark, .dark *) .skeleton-outline {
+  border-color: #2a1a45;
+}
+
+:is(.dark, .dark *) .skeleton-outline::after {
+  background: linear-gradient(
+    90deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.04) 37%,
+    transparent 63%
+  );
+  background-size: 800px 100%;
+}
