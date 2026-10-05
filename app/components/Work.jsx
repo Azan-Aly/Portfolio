@@ -24,6 +24,7 @@ const Work = () => {
               src={bgImage}
               alt={title}
               fill
+              placeholder='blur'
               sizes='(max-width: 768px) 100vw, 60vw'
               className='object-cover object-center opacity-75 transition duration-700 group-hover:scale-105 group-active:scale-105 group-hover:opacity-90 group-active:opacity-90'
             />

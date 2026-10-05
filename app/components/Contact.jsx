@@ -1,7 +1,5 @@
 "use client";
 
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
 import React, { useState } from 'react'
 
 const Contact = () => {
@@ -80,7 +78,7 @@ const Contact = () => {
           className='py-3.5 px-10 w-max flex items-center justify-center gap-3 bg-black dark:bg-white text-white dark:text-black font-medium rounded-full cursor-pointer mx-auto transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed shadow-md hover:shadow-lg active:shadow-lg'
         >
           <span>{isSubmitting ? 'Sending...' : 'Submit now'}</span>
-          <Image src={assets.right_arrow_white} alt='' className='w-4 dark:invert' />
+          <svg className='w-4 h-4' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><line x1='5' y1='12' x2='19' y2='12'/><polyline points='12 5 19 12 12 19'/></svg>
         </button>
 
         {result && (

@@ -1,49 +1,14 @@
-import hero_pic from './hero-pic.jpg'
-import hero from './hero.png'
-import main_pic from './main.png'
-import center_pic from './centerimg.png'
-import newpic from './new.png'
-import prof from './prof.png'
-import first from './first.png'
-import code_icon from './code-icon.png';
-import code_icon_dark from './code-icon-dark.png';
-import circular_Text from './circular-text.png';
-import edu_icon from './edu-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
-import right_arrow_white from './right-arrow-white.png';
-import logo_dark from './logo_dark.png';
-import mail_icon from './mail_icon.png';
-import mail_icon_dark from './mail_icon_dark.png';
-import download_icon from './download-icon.png';
+import profile from './profile.jpg'
+import profiletwo from './profiletwo.jpg'
 import hand_icon from './hand-icon.png';
 import verify_badge from './verifybadge.png'
 import header_bg_color from './header-bg-color.png';
 import header_bg_color_two from './header-bg-color-two.png';
-import moon_icon from './moon_icon.png';
-import sun_icon from './sun_icon.png';
-import arrow_icon from './arrow-icon.png';
-import arrow_icon_dark from './arrow-icon-dark.png';
-import menu_black from './menu-black.png';
-import menu_white from './menu-white.png';
-import close_black from './close-black.png';
-import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import web from './web.png';
 import app from './app.png';
 import backend from './backend.png';
 import frontend from './frontend.png';
 import circularText from "./circular-text.png";
-import right_arrow from './right-arrow.png';
-import send_icon from './send-icon.png';
-import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import html from "./html.png";
 import css from "./css.png";
 import javascript from "./javascript.png";
@@ -69,10 +34,6 @@ import antigravity from "./antigravity.png"
 import chatgpt from "./chatgpt.png";
 import gemini from "./gemini.png";
 import claude from "./claude.png";
-import work1 from "./public/work-1.png";
-import work2 from "./public/work-2.png";
-import work3 from "./public/work-3.png";
-import work4 from "./public/work-4.png";
 import resultone from "./result-checker-1.png";
 import resulttwo from "./result-checker-2.png";
 import resultthree from "./result-checker-3.png";
@@ -101,6 +62,7 @@ import maximizeProductivityCertificate from './max_productivity.png';
 import discoverArtOfPromptingCertificate from './art_of_prompting.png';
 import useAiResponsiblyCertificate from './use_ai_responsibly.png';
 import stayAheadOfAiCertificate from './stay_ahead_of_ai.png';
+import moon_icon from "./moon_icon.png";
 
 export const assets = {
     html,
@@ -128,52 +90,18 @@ export const assets = {
     chatgpt,
     gemini,
     claude,
-    hero_pic,
-    hero,
-    center_pic,
-    main_pic,
-    newpic,
-    first,
-    circular_Text,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    firebase,
-    figma,
-    prof,
-    right_arrow_white,
-    logo_dark,
-    mail_icon,
-    mail_icon_dark,
-    download_icon,
+    profile,
+    profiletwo,
     hand_icon,
     header_bg_color,
     header_bg_color_two,
-    moon_icon,
-    sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
-    menu_black,
-    menu_white,
-    close_black,
-    close_white,
     verify_badge,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
     web,
     app,
     backend,
     frontend,
     circularText,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark
+    moon_icon
 };
 
 export const workData = [
@@ -316,11 +244,11 @@ export const serviceData = [
         description: 'End-to-end web applications built with modern architectures using React, Node.js, and clean code principles.',
         link: '#contact'
     },
-    { 
-        icon: assets.app, 
-        title: 'Cross-Platform Mobile Apps', 
-        description: 'Developing smooth, native-like iOS and Android mobile applications using React Native.', 
-        link: '#contact' 
+    {
+        icon: assets.app,
+        title: 'Cross-Platform Mobile Apps',
+        description: 'Developing smooth, native-like iOS and Android mobile applications using React Native.',
+        link: '#contact'
     },
     {
         icon: assets.backend,

@@ -60,7 +60,7 @@ const Navbar = () => {
     return (
         <>
             <div className='fixed dark:hidden top-0 right-0 w-11/12 -z-10 translate-y-[-75%] pointer-events-none'>
-                <Image src={assets.header_bg_color} alt='' className='w-full' priority />
+                <Image src={assets.header_bg_color} alt='' width={920} height={400} className='w-full' priority />
             </div>
 
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[4%] py-4 flex items-center justify-between z-50 border-b transition-colors duration-300 ${isScroll ? "bg-white/70 dark:bg-[#180829]/80 backdrop-blur-lg shadow-sm shadow-slate-200/70 dark:shadow-slate-950/40 border-gray-200/50 dark:border-slate-600" : "border-transparent bg-transparent"}`}>
@@ -97,8 +97,11 @@ const Navbar = () => {
 
                     <ThemeToggle theme={theme} onToggle={toggleTheme} />
                     <button type='button' aria-label='Open navigation menu' className='block md:hidden ml-1 sm:ml-2 cursor-pointer p-1 rounded-lg border border-transparent' onClick={openMenu}>
-                        <Image src={assets.menu_black} alt='' className='w-6 dark:hidden' />
-                        <Image src={assets.menu_white} alt='' className='w-6 hidden dark:block' />
+                        <svg className='w-6 h-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                            <line x1='3' y1='12' x2='21' y2='12' />
+                            <line x1='3' y1='6' x2='21' y2='6' />
+                            <line x1='3' y1='18' x2='21' y2='18' />
+                        </svg>
                     </button>
                     <Pullcord theme={theme} onToggle={toggleTheme} />
                 </div>
@@ -106,8 +109,10 @@ const Navbar = () => {
                 {/* ------------ mobile menu ----------- */}
                 <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 text-slate-800 transition-transform duration-500 shadow-2xl dark:bg-[#170d2a] dark:text-slate-100 border-l border-transparent dark:border-slate-600'>
                     <button type='button' aria-label='Close navigation menu' className='absolute right-6 top-6 cursor-pointer p-1' onClick={closeMenu}>
-                        <Image src={assets.close_black} alt='' className='w-5 dark:hidden' />
-                        <Image src={assets.close_white} alt='' className='w-5 hidden dark:block' />
+                        <svg className='w-6 h-6' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                            <line x1='18' y1='6' x2='6' y2='18' />
+                            <line x1='6' y1='6' x2='18' y2='18' />
+                        </svg>
                     </button>
 
                     <li className='font-Ovo' onClick={closeMenu}>

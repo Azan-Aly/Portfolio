@@ -1,6 +1,7 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import { siteUrl } from "./site-url";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
@@ -66,9 +67,34 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Muhammad Azan Ali",
+    url: siteUrl,
+    image: `${siteUrl}/opengraph-image`,
+    sameAs: [
+      "https://github.com/Azan-Aly",
+      "https://www.linkedin.com/in/azanaly/",
+      "https://facebook.com/mr.azanaly",
+      "https://www.instagram.com/mr.azan_aly"
+    ],
+    jobTitle: "Full-Stack Developer",
+    worksFor: {
+      "@type": "Organization",
+      name: "Self-Employed"
+    },
+    description: "Pakistan-based full-stack developer building scalable web applications with React, Next.js, Node.js, and MongoDB."
+  };
+
   return (
     <html
       lang="en" suppressHydrationWarning
@@ -76,8 +102,13 @@ export default function RootLayout({ children }) {
     >
       <head>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body id="top" className="min-h-full flex flex-col dark:bg-[#11001F] dark:text-white">
+        <Script id="theme-initializer" strategy="beforeInteractive">
+          {`
             (function() {
               try{
                 const saved = localStorage.getItem("theme");
@@ -85,11 +116,11 @@ export default function RootLayout({ children }) {
                 const initial = saved || system;
                 if(initial === 'dark') document.documentElement.classList.add('dark');
               } catch (e){}
-            })();`
-          }}
-        />
-      </head>
-      <body id="top" className="min-h-full flex flex-col dark:bg-[#11001F] dark:text-white">{children}</body>
+            })();
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }

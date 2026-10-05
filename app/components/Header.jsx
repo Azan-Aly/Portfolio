@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto min-h-[min(100dvh,52rem)] pt-22 pb-8 flex flex-col items-center justify-center gap-2 dark:text-white">
       <div className='justify-center items-center flex relative'>
-        <Image src={assets.prof} alt='Muhammad Azan Ali' priority className='rounded-full w-36 h-36 object-cover shadow-md' />
-        <Image src={assets.verify_badge} alt='Verified' className='absolute bottom-0 right-2 w-8' />
+        <Image src={assets.profile} alt='Muhammad Azan Ali' priority placeholder='blur' width={144} height={144} className='rounded-full w-36 h-36 object-cover shadow-md' />
+        <Image src={assets.verify_badge} alt='Verified' width={32} height={32} className='absolute bottom-0 right-2 w-8 h-auto' />
       </div>
       <h2 className='flex items-center justify-center gap-2 text-xl md:text-2xl mb-1.5 font-Ovo dark:text-white'>
         Hi! I&apos;m Muhammad Azan Ali
-        <Image src={assets.hand_icon} alt='' className='w-6' />
+        <Image src={assets.hand_icon} alt='' className='w-6 h-auto' />
       </h2>
 
       <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo dark:text-white'>
@@ -21,8 +21,8 @@ const Header = () => {
       <p className='max-w-3xl mx-auto font-Ovo text-slate-700 dark:text-slate-300'>I am a MERN & Full-Stack Developer from Pakistan, with hands-on experience building scalable web apps using React.js, Node.js, and Next.js — currently exploring AI-assisted development, agents and automation.</p>
       {/* buttons */}
       <div className='flex flex-col sm:flex-row gap-4 items-center justify-center mt-4'>
-        <Link href="#contact" className='px-10 py-2 border border-white rounded-full bg-black text-white flex items-center gap-2 transition-transform hover:scale-105 active:scale-95 dark:bg-white dark:text-[#11001F]'>contact me <Image src={assets.right_arrow_white} alt='' className='w-4 dark:invert' /> </Link>
-        <Link href="/myResume.pdf" download className='px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2 text-slate-800 transition-transform hover:scale-105 active:scale-95 dark:border-slate-600 dark:text-slate-100' >my resume <Image src={assets.download_icon} alt='' className='w-4 dark:invert' /> </Link>
+        <Link href="#contact" className='px-10 py-2 border border-white rounded-full bg-black text-white flex items-center gap-2 transition-transform hover:scale-105 active:scale-95 dark:bg-white dark:text-[#11001F]'>contact me <svg className='w-5 h-5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><line x1='5' y1='12' x2='19' y2='12'/><polyline points='12 5 19 12 12 19'/></svg> </Link>
+        <Link href="/myResume.pdf" download className='px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2 text-slate-800 transition-transform hover:scale-105 active:scale-95 dark:border-slate-600 dark:text-slate-100' >my resume <svg className='w-5 h-5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/><polyline points='7 10 12 15 17 10'/><line x1='12' y1='15' x2='12' y2='3'/></svg> </Link>
       </div>
 
       {/* svgs */}

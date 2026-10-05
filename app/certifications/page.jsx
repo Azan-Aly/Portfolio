@@ -60,7 +60,7 @@ export default function CertificationsPage() {
         <section className='mx-auto max-w-3xl py-20 text-center'>
           <h1 className='mb-4 font-Ovo text-4xl font-semibold sm:text-6xl text-slate-900 dark:text-white'>Certifications</h1>
           <div className='mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-fuchsia-100 dark:bg-[#201037] dark:ring-fuchsia-900/40'>
-            <Image src={verifyBadge} alt='Verified' className='h-12 w-12 object-contain' />
+            <Image src={verifyBadge} alt='Verified' width={48} height={48} className='h-12 w-12 object-contain' />
           </div>
           <p className='mt-8 font-Ovo text-lg font-medium text-fuchsia-700 dark:text-fuchsia-400'>Credentials and learning</p>
           <p className='mt-4 text-lg leading-8 text-slate-600 dark:text-slate-300'>
@@ -72,7 +72,7 @@ export default function CertificationsPage() {
           {certificateData.map(({ title, issuer, date, image }) => (
             <article key={title} className='group select-none overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 active:-translate-y-1.5 hover:border-fuchsia-300 active:border-fuchsia-300 hover:shadow-2xl active:shadow-2xl hover:shadow-fuchsia-500/20 active:shadow-fuchsia-500/20 dark:border-slate-800 dark:bg-[#18092a] dark:hover:border-fuchsia-500/60 dark:active:border-fuchsia-500/60 dark:hover:shadow-[0_12px_35px_rgba(217,70,239,0.3)] dark:active:shadow-[0_12px_35px_rgba(217,70,239,0.3)]'>
               <div className='overflow-hidden'>
-                <Image src={image} alt={`${title} certificate issued by ${issuer}`} className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 group-active:scale-105' />
+                <Image src={image} alt={`${title} certificate issued by ${issuer}`} placeholder='blur' sizes='(max-width: 768px) 100vw, 50vw' className='aspect-14/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 group-active:scale-105' />
               </div>
               <div className='p-6'>
                 <p className='text-sm font-semibold uppercase tracking-wide text-fuchsia-700 dark:text-fuchsia-400'>{issuer}</p>

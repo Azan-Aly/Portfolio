@@ -1,5 +1,3 @@
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -11,8 +9,7 @@ const Footer = () => {
                     <span className="text-4xl text-gray-900 dark:text-white tracking-tight ml-6 font-semibold">Azan<span className="text-[#c026d3] font-bold">.</span></span>
                 </Link>
                 <Link className='font-Ovo text-xl sm:text-2xl md:text-3xl mb-6 flex items-center gap-2 justify-center text-slate-800 dark:text-white' href={"mailto:work.azan.dev@gmail.com"}>
-                    <Image className='w-6 mt-1 dark:hidden' src={assets.mail_icon} alt='Email' />
-                    <Image className='w-6 mt-1 hidden dark:block' src={assets.mail_icon_dark || assets.mail_icon} alt='Email' />
+                    <svg className='w-6 h-6 mt-1' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><rect x='2' y='4' width='20' height='16' rx='2'/><path d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7'/></svg>
                     work.azan.dev@gmail.com
                 </Link>
                 <Link href='/certifications' className='mb-6 py-3.5 px-10 w-max flex items-center justify-between gap-3 bg-linear-to-r from-violet-600 via-fuchsia-600 to-pink-600 hover:from-violet-500 active:from-violet-500 hover:to-pink-500 active:to-pink-500 shadow-lg shadow-fuchsia-500/25 hover:shadow-fuchsia-500/40 active:shadow-fuchsia-500/40 text-white font-medium rounded-full cursor-pointer mx-auto transition-all duration-300 hover:scale-105 active:scale-95'>

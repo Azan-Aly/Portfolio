@@ -1,8 +1,14 @@
 "use client";
 
 import React from 'react'
-import { assets, infoList } from '@/assets/assets'
+import { assets } from '@/assets/assets'
 import Image from 'next/image'
+
+const infoList = [
+    { icon: <svg className='w-7 h-7 mt-3 text-slate-800 dark:text-slate-200' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>, title: 'Languages', description: 'React.js, Node.js, Express.js, MongoDB, Next.js' },
+    { icon: <svg className='w-7 h-7 mt-3 text-slate-800 dark:text-slate-200' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>, title: 'Education', description: 'BS Computer Science (2023-2027)' },
+    { icon: <svg className='w-7 h-7 mt-3 text-slate-800 dark:text-slate-200' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><rect x='2' y='3' width='20' height='14' rx='2' ry='2'/><line x1='8' y1='21' x2='16' y2='21'/><line x1='12' y1='17' x2='12' y2='21'/></svg>, title: 'Projects', description: 'Built more than 3 projects' }
+];
 
 const About = () => {
     return (
@@ -12,7 +18,7 @@ const About = () => {
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
                 <div className="w-64 sm:w-80 rounded-3xl max-w-none shadow-lg">
-                    <Image src={assets.newpic} alt="Muhammad Azan Ali" priority className="w-full rounded-3xl object-cover" />
+                    <Image src={assets.profiletwo} alt="Muhammad Azan Ali" priority placeholder='blur' width={320} height={400} className="rounded-3xl object-cover" style={{ width: '100%', height: 'auto', aspectRatio: '320/400' }} />
                 </div>
                 <div className='flex-1'>
                     <p className='mb-10 max-w-2xl font-Ovo tracking-wider text-slate-700 dark:text-slate-300 leading-relaxed'>
@@ -20,10 +26,9 @@ const About = () => {
                     </p>
 
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-                        {infoList.map(({icon, iconDark, title, description}, index)=>(
+                        {infoList.map(({icon, title, description}, index)=>(
                             <li key={index} className='select-none border-[0.5px] border-gray-400 cursor-pointer dark:border-slate-700 rounded-3xl p-6 hover:shadow-xl active:shadow-xl hover:shadow-fuchsia-200/40 active:shadow-fuchsia-200/40 dark:hover:shadow-fuchsia-500/20 dark:active:shadow-fuchsia-500/20 hover:bg-[#fcf4ff] active:bg-[#fcf4ff] dark:hover:bg-white/5 dark:active:bg-white/5 hover:-translate-y-1 active:-translate-y-1 transition-all duration-300'>
-                                <Image src={icon} alt={title} className='w-7 mt-3 dark:hidden' />
-                                <Image src={iconDark || icon} alt={title} className='w-7 mt-3 hidden dark:block' />
+                                {icon}
                                 <h3 className='my-4 font-semibold text-gray-700 dark:text-slate-200'>{title}</h3>
                                 <p className='text-gray-600 dark:text-slate-300 text-sm leading-relaxed'>{description}</p>
                             </li>

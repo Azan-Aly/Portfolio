@@ -89,7 +89,7 @@ export default async function ProjectDetails({ params }) {
           </div>
 
           <div className='relative min-h-72 overflow-hidden rounded-3xl border border-violet-200 bg-violet-50 shadow-[0_16px_50px_rgba(139,92,246,0.12)] dark:border-violet-500/20 dark:bg-[#160d27]'>
-            <Image src={screenshots[0]} alt={`${title} preview`} fill priority sizes='(max-width: 1024px) 100vw, 45vw' className='object-cover' />
+            <Image src={screenshots[0]} alt={`${title} preview`} fill priority placeholder='blur' sizes='(max-width: 1024px) 100vw, 45vw' className='object-cover' />
             <div className='absolute inset-0 bg-linear-to-t from-white/35 to-transparent dark:from-[#11001F]/60' />
           </div>
         </section>
@@ -120,7 +120,7 @@ export default async function ProjectDetails({ params }) {
           <div className='mt-8 grid gap-5 md:grid-cols-2'>
             {screenshots.map((screenshot, index) => (
               <div key={screenshot.src || index} className='relative aspect-16/10 overflow-hidden rounded-2xl border border-violet-100 bg-slate-50 dark:border-violet-500/20 dark:bg-[#160d27]'>
-                <Image src={screenshot} alt={`${title} screenshot ${index + 1}`} fill sizes='(max-width: 768px) 100vw, 50vw' className='object-cover' />
+                <Image src={screenshot} alt={`${title} screenshot ${index + 1}`} fill placeholder='blur' sizes='(max-width: 768px) 100vw, 50vw' className='object-cover' />
               </div>
             ))}
           </div>
