@@ -3,13 +3,13 @@ export default function Loading() {
         <div className="flex flex-col h-screen w-full items-center justify-center bg-white dark:bg-[#11001F] transition-colors duration-300">
             <div className="relative flex items-center justify-center w-20 h-20 mb-8">
                 {/* Outer subtle ring */}
-                <div className="absolute inset-0 rounded-full border-[2px] border-slate-100 dark:border-white/5"></div>
+                <div className="absolute inset-0 rounded-full border-2 border-slate-100 dark:border-white/5"></div>
                 
                 {/* Spinning gradient ring */}
-                <div className="absolute inset-0 rounded-full border-[2px] border-transparent border-t-fuchsia-600 border-r-violet-600 animate-spin" style={{ animationDuration: '1.2s' }}></div>
+                <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-fuchsia-600 border-r-violet-600 animate-spin" style={{ animationDuration: '1.2s' }}></div>
                 
                 {/* Inner reverse spinning ring */}
-                <div className="absolute inset-3 rounded-full border-[2px] border-transparent border-b-pink-500 border-l-fuchsia-400 animate-spin" style={{ animationDuration: '0.8s', animationDirection: 'reverse' }}></div>
+                <div className="absolute inset-3 rounded-full border-2 border-transparent border-b-pink-500 border-l-fuchsia-400 animate-spin" style={{ animationDuration: '0.8s', animationDirection: 'reverse' }}></div>
                 
                 {/* Center glowing core */}
                 <div className="absolute w-2 h-2 rounded-full bg-fuchsia-500 animate-ping opacity-75"></div>
