@@ -72,6 +72,9 @@ export const metadata = {
     address: false,
     telephone: false,
   },
+  verification: {
+    google: '0nwWqbxpimLV-LwFZ77E_ZvhrPpGgfLdMpvgqTXObCY',
+  },
 };
 
 export default function RootLayout({ children }) {
